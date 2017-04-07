@@ -16,7 +16,7 @@ To see the result of the script go to: *~/free-ssl-shift/logs/installssl.log*
 You need to complete all the installssl.sh instructions, at the end it will tell you to add one line to your cron jobs. This line will do the job of checking the expiring date of your certificate.<br>
 `renewssl.sh` will renew your certificate if the expiration date is less than 30 days.<br>
 To see the result of the script go to: *~/free-ssl-shift/logs/renewssl.log*<br>
-**IMPORTANT NOTICE** renewssl.sh will need you to perform a stop and start app.js, default will do `./shift_manager.bash stop` and `./shift_manager.bash start`.<br>
+**IMPORTANT NOTICE** renewssl.sh will need you to perform a stop and start app.js, default will do `./shift_manager.bash reload`.<br>
 
 ## Install self signed certificate.
 If you don't have your own domain you can still generate a SSL certificate, use `bash localssl.sh`<br>
